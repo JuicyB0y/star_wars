@@ -1,0 +1,17 @@
+.image {
+  display: block;
+  margin: 70px auto 10px;
+  width: 250px;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: var(--text-shadow-blue);
+}
+
+.text span {
+  text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+.list__container {
+  margin: 25px 0;
+  padding: 0;
+  list-style-type: none;
+  column-count: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 220px;
+}
+
+.list__item {
+  /* display: flex; */
+}
+
+.list__item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.person__photo {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.person__photo {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.person__name {
+  color: #fff;
+  font-style: 18px;
+}
+
+.wrapper__input {
+  position: relative;
+  display: inline-block;
+}
+
+.input {
+  min-width: 300px;
+  padding: 10px 15px;
+  padding-right: 50px;
+  border: 3px solid #dfe2df;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.input:focus {
+  border: 3px solid #6a83fb;
+}
+
+.clear {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  transition: 0.5s;
+  opacity: 4;
+  cursor: pointer;
+}
+
+.clear__diabled {
+  opacity: 0.2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

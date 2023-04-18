@@ -1,0 +1,9 @@
+.subtitle {
+  display: flex;
+  justify-content: center;
+  line-height: 1.7;
+  font-size: 26px;
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var (--transition);
+}

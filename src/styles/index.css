@@ -1,0 +1,83 @@
+:root {
+  --color-dark-gray: #10100e;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-yellow: #ffff00;
+  --color-blue: #6a83fb;
+  --color-violet: #ae72c2;
+  --color-red: #f75d83;
+
+  --transition: 0.4s;
+  --font-size-main: 16px;
+
+  --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
+  --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+
+  --box-shadow-white: 0 16px 24px 2px rgba(255, 255, 255, 0.02), 0 6px 30px 5px rgba(255, 255, 255, 0.04),
+    0 8px 10px -5px rgba(255, 255, 255, 0.1);
+
+  --box-shadow-black: 0 16px 24px 2px rgba(0, 0, 0, 0.5), 0 6px 30px 5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+  /* --theme-bg-default: url('../assets/bg.jpg'); */
+
+  /* THEMES */
+
+  --theme-light-header: #dfe2df;
+  --theme-dark-header: #ca6c6f;
+  --theme-neitral-header: #cccc46;
+  --theme-default-header: var(--theme-neitral-header);
+
+  --theme-light-bgimage: linear-gradient(to right bottom, #051937, #162454, #312d70, #533389, #7a359f);
+  --theme-dark-bgimage: linear-gradient(to right bottom, #000000, #160b11, #20141e, #281b2e, #2b2440);
+  --theme-neitral-bgimage: url('../assets/bg.jpg');
+  --theme-default-bgimage: var(--theme-neitral-bgimage);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark-gray);
+  font-family: 'Nunito', Roboto, system-ui, Tahoma, sans-serif;
+  font-size: var(--font-size-main);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: 26px;
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var (--transition);
+}
+
+/* стилизуем скроллбар */
+
+* {
+  scrollbar-color: rgb(36, 57, 97) rgba(0, 0, 0, 0.7);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* его цвет */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(36, 57, 97);
+  border-radius: 2px;
+}
+/* его фон */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* убираем белую точку */
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
